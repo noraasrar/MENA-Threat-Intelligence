@@ -1,0 +1,29 @@
+title: Suspicious Mass Remote Wipe Action via Intune / Azure AD Audit
+id: cti-handala-01
+status: experimental
+description: Detects an anomalous spike in device management remote-wipe commands associated with identity abuse campaigns (e.g., Handala / Void Manticore).
+references:
+    - https://github.com/yourusername/MENA-Threat-Intelligence
+author: Nora
+date: 2026/07/21
+logsource:
+    product: azure
+    service: entra-id-audit / intune
+detection:
+    selection:
+        OperationName: 
+            - "Remote Wipe"
+            - "Corporate Wipe"
+            - "Delete Device"
+            - "Erase Device"
+    timeframe: 10m
+    condition: selection | count(UserId) > 5
+falsepositives:
+    - Legitimate IT mass-offboarding or hardware refresh projects (should be cross-checked with approved change management tickets).
+level: high
+tags:
+    - attack.execution
+    - attack.t1651
+    - attack.impact
+    - attack.t1485
+    - cti.mena.handala
