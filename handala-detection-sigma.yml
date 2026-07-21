@@ -3,7 +3,7 @@ id: cti-handala-01
 status: experimental
 description: Detects an anomalous spike in device management remote-wipe commands associated with identity abuse campaigns (e.g., Handala / Void Manticore).
 references:
-    - https://github.com/yourusername/MENA-Threat-Intelligence
+    - https://github.com/noraasrar/MENA-Threat-Intelligence
 author: Nora
 date: 2026/07/21
 logsource:
