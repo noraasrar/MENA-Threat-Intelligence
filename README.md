@@ -1,40 +1,43 @@
 
-
----
-# Cyber Threat Intelligence Reports
-Welcome to my Cyber Threat Intelligence research hub focusing on Middle Eastern APT tradecraft, identity threat weaponization, and incident remediation strategies.
+# MENA Threat Intelligence
 
 ## Overview
 
-This repository contains a collection of independently prepared Cyber Threat Intelligence (CTI) reports based on publicly available reporting.
+This repository contains independently developed cyber threat intelligence research and detection content focused on threat actors and campaigns affecting the Middle East and North Africa (MENA) region.
 
-Each report analyzes a real-world threat actor, campaign, or emerging cybersecurity trend using structured intelligence writing and incorporates technical research, MITRE ATT&CK mapping, and defensive recommendations.
+The projects in this repository combine structured intelligence analysis with practical detection engineering to demonstrate how threat intelligence can be translated into actionable defensive content.
+
+## Repository Contents
+
+### 📄 Intelligence Reports
+
+- **Handala (Void Manticore) Weaponization of Mobile Device Management (MDM) Platforms**
+  - An intelligence advisory analyzing Handala's reported abuse of Microsoft Intune and cloud identity infrastructure to conduct destructive operations.
+  - Located in `/reports`
+
+### 🛡️ Detection Content
+
+- **Handala Microsoft Intune Remote Wipe Detection**
+  - Sigma detection rule designed to identify suspicious activity associated with Microsoft Intune remote wipe operations.
+  - Located in `/detections`
 
 ## Skills Demonstrated
 
 - Cyber Threat Intelligence (CTI)
 - Threat Actor Research
-- Intelligence Analysis
 - Structured Analytic Writing
-- MITRE ATT&CK Framework
-- Threat Hunting Concepts
-- Detection-Oriented Thinking
+- Detection Engineering
+- Sigma Rule Development
+- MITRE ATT&CK Mapping
+- Identity-Based Threat Analysis
 - Defensive Recommendations
-
-## Reports
-
-| Report | Topic | Status |
-|---------|-------|--------|
-| Handala (Void Manticore) Weaponization of MDM Platforms | Identity-based attacks abusing Microsoft Intune | ✅ |
-| More reports coming soon | | |
 
 ## Methodology
 
-Each report is independently researched using publicly available reporting from reputable cybersecurity organizations, government agencies, and technical documentation. Analytical judgments and defensive recommendations reflect my own assessment based on the available evidence.
+Each project is developed using publicly available reporting, technical documentation, and industry best practices. Intelligence assessments represent my own analysis based on the available evidence, while detection content is designed to demonstrate how intelligence can be operationalized into defensive capabilities.
 
 ---
 
 **Author:** Nora Asrar
 
 *This repository was created for portfolio and educational purposes.*
-
